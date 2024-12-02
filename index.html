@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Trabajo en Equipo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+            <li><a href="#" onclick="mostrarSeccion('chat')">Chat</a></li>
+            <li><a href="#" onclick="mostrarSeccion('tareas')">Tareas</a></li>
+            <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            <li><a href="#" onclick="mostrarSeccion('soporte')">Soporte Técnico</a></li>
+            <li><a href="#" onclick="mostrarSeccion('tienda')">Tienda</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Sección de inicio con el logo -->
+        <section id="inicio" class="seccion-activa">
+            <img src="images/logo.png" alt="Logo de la Empresa" class="logo">
+        </section>
+
+        <!-- Sección de chat -->
+        <section id="chat" class="seccion-oculta">
+            <h3>Chat</h3>
+            <input type="text" placeholder="Escribe un mensaje...">
+            <button>Enviar</button>
+        </section>
+
+        <!-- Sección de tareas -->
+        <section id="tareas" class="seccion-oculta">
+            <h3>Tareas</h3>
+            <input type="text" placeholder="Escribe una nueva tarea...">
+            <button>Agregar Tarea</button>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" class="seccion-oculta">
+            <h3>Contacto</h3>
+            <p>Teléfono: 555-123-4567</p>
+            <p>Email: soporte@empresa.com</p>
+        </section>
+
+        <!-- Sección de soporte técnico -->
+        <section id="soporte" class="seccion-oculta">
+            <h3>Soporte Técnico</h3>
+            <textarea placeholder="Describe tu problema aquí..."></textarea>
+            <button>Enviar</button>
+        </section>
+
+        <!-- Sección de tienda -->
+        <section id="tienda" class="seccion-oculta">
+            <h3>Tienda</h3>
+            <div class="tienda-container">
+                <div class="producto">
+                    <h3>15 minutos extra de descanso</h3>
+                    <p>Precio: 100 puntos</p>
+                    <button>Canjear</button>
+                </div>
+                <div class="producto">
+                    <h3>Incentivo de $100 MXN</h3>
+                    <p>Precio: 1000 puntos</p>
+                    <button>Canjear</button>
+                </div>
+                <!-- Agregar más productos aquí -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
